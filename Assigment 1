@@ -1,0 +1,100 @@
+Q1. Python Data Types
+TypeDescriptionExampleintWhole numbers, no decimalage = 20floatNumbers with decimal pointprice = 99.5strText enclosed in quotesname = "Gargi"boolOnly True or Falseis_student = True
+pythonx = 10          # int
+y = 3.14        # float
+z = "Hello"     # str
+flag = True     # bool
+
+print(type(x))  # <class 'int'>
+print(type(y))  # <class 'float'>
+print(type(z))  # <class 'str'>
+print(type(flag)) # <class 'bool'>
+Key difference: int stores exact whole numbers, float stores decimals, str stores text, and bool stores only two logical values.
+
+Q2. Variables – Name, Age, City
+pythonname = "Gargi"
+age = 20
+city = "Jaipur"
+
+print("Name:", name)
+print("Age:", age)
+print("City:", city)
+Output:
+Name: Gargi
+Age: 20
+City: Jaipur
+
+Q3. Name Input – Uppercase & Length
+pythonname = input("Enter your name: ")
+
+print("Uppercase:", name.upper())
+print("Total characters:", len(name))
+Output (if input is "Gargi"):
+Uppercase: GARGI
+Total characters: 5
+
+upper() converts all letters to capitals. len() counts every character including spaces.
+
+
+Q4. Five Common String Methods
+pythons = "  hello world  "
+
+# 1. upper() – converts to uppercase
+print(s.upper())          # "  HELLO WORLD  "
+
+# 2. lower() – converts to lowercase
+print(s.lower())          # "  hello world  "
+
+# 3. strip() – removes leading/trailing spaces
+print(s.strip())          # "hello world"
+
+# 4. replace() – replaces a word/character
+print(s.replace("world", "Python"))  # "  hello Python  "
+
+# 5. split() – splits string into a list
+print(s.strip().split())  # ['hello', 'world']
+MethodPurposeupper()All letters → UPPERCASElower()All letters → lowercasestrip()Removes extra spaces from both endsreplace(a, b)Swaps a with b inside the stringsplit()Breaks string into a list of words
+
+Q5. List of Five Fruits
+pythonfruits = ["Apple", "Banana", "Mango", "Grapes", "Orange"]
+
+print("Complete list:", fruits)
+print("First element:", fruits[0])   # index 0 = first
+print("Last element:", fruits[-1])   # index -1 = last
+print("Total items:", len(fruits))
+Output:
+Complete list: ['Apple', 'Banana', 'Mango', 'Grapes', 'Orange']
+First element: Apple
+Last element: Orange
+Total items: 5
+
+In Python, indexing starts at 0. Using -1 always gives the last item regardless of list size.
+
+
+Q6. List Operations – Add & Remove
+pythonnumbers = [10, 20, 30, 40, 50]
+
+numbers.append(60)   # adds 60 at the end
+numbers.remove(20)   # removes first occurrence of 20
+
+print("Updated list:", numbers)
+Output:
+Updated list: [10, 30, 40, 50, 60]
+
+append() always adds to the end. remove() deletes by value, not by position.
+
+
+Q7. What is Artificial Intelligence (AI)?
+Definition: AI is the ability of a computer or machine to perform tasks that normally require human intelligence — such as understanding language, recognizing images, making decisions, and learning from experience.
+Importance:
+
+Automates repetitive tasks, saving time and reducing errors
+Helps analyse huge amounts of data quickly
+Enables smarter decision-making in medicine, business, and science
+Powers personalization in apps and services we use daily
+
+Four Real-Life Applications:
+ApplicationHow AI is UsedHealthcareDiagnosing diseases from X-rays/MRI scansE-commerceRecommending products based on your browsingTransportationSelf-driving cars navigating roadsFinanceDetecting fraudulent transactions in real time
+
+Q8. Is it AI? — Identify & Explain
+ExampleAI?ReasonChatGPT✅ YesUses large language models to understand and generate human-like text — learns from vast dataGoogle Maps route prediction✅ YesUses ML to predict traffic, suggest fastest routes, and learn from real-time dataCalculator❌ NoOnly follows fixed rules (2+2=4 always); no learning, no decision-making — just programmed logicNetflix recommendations✅ YesUses collaborative filtering (ML) to analyse your watch history and suggest shows you'll likely enjoyVoice Assistants (Alexa/Siri)✅ YesUse Natural Language Processing (NLP) + ML to understand speech, interpret intent, and respond intelligently
